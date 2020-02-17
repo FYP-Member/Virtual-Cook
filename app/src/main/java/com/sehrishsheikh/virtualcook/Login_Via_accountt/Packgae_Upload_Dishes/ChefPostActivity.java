@@ -1,14 +1,22 @@
-package com.sehrishsheikh.virtualcook.Login_Via_Account.ChefSideView.FirstFragment.Chef_Dishes;
+package com.sehrishsheikh.virtualcook.Login_Via_accountt.Packgae_Upload_Dishes;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -36,7 +44,6 @@ public class ChefPostActivity extends AppCompatActivity
     private static final int CHOOSE_IMAGE = 1;
 
     private Button chooseImage, btnUploadImage;
-    private TextView viewGallery;
     private ImageView imgPreview;
     private EditText imgDescription;
     private ProgressBar uploadProgress;
@@ -46,18 +53,33 @@ public class ChefPostActivity extends AppCompatActivity
     private StorageReference mStorageRef;
     private DatabaseReference mDatabaseRef;
 
+    ActionBar actionBar;
     private StorageTask mUploadTask;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chef_post);
+
+
+        //for setting back button
+        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp);
+        upArrow.setColorFilter(getResources().getColor(R.color.graydark), PorterDuff.Mode.SRC_ATOP);
+        getSupportActionBar().setHomeAsUpIndicator(upArrow);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //for title of action bar
+        setTitle("MyDish");
+
+
+
 
         uploadProgress = findViewById(R.id.uploadProgress);
         chooseImage = findViewById(R.id.chooseImage);
         btnUploadImage = findViewById(R.id.btnUploadImage);
 
-        viewGallery = findViewById(R.id.viewGallery);
+
 
         imgDescription = findViewById(R.id.imgDescription);
         imgPreview = findViewById(R.id.imgPreview);
@@ -65,13 +87,6 @@ public class ChefPostActivity extends AppCompatActivity
         mStorageRef = FirebaseStorage.getInstance().getReference("uploads");
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("uploads");
 
-        viewGallery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ChefPostActivity.this, ViewImageActivity.class);
-                startActivity(intent);
-            }
-        });
         btnUploadImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -11,7 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.sehrishsheikh.virtualcook.Login_Via_Account.ChefSideView.BNV;
+import com.sehrishsheikh.virtualcook.Login_Via_accountt.BNV;
 
 public class HomeActivity extends AppCompatActivity
 {

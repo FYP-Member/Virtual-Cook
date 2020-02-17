@@ -25,35 +25,6 @@
         android:iconTint="@color/White"/>
 
 
-    <item
-        android:id="@+id/itme2_dinnerspinner_fragment"
-        android:title="Dinner Spinner"
-        android:iconTint="@color/White">
-
-        <menu>
-
-            <group>
-
-
-                <item android:id="@+id/fragment_1"
-                    android:title="Dish Type"
-                    android:icon="@drawable/ic_room_service_black_24dp"
-                    android:iconTint="@color/White"/>
-
-                <item android:id="@+id/fragment_2"
-                    android:title="Dish Ingredients"
-                    android:icon="@drawable/ic_restaurant_black_24dp"
-                    android:iconTint="@color/White"/>
-
-                <item android:id="@+id/fragment_3"
-                    android:title="Ready In"
-                    android:icon="@drawable/ic_timer_black_24dp"
-                    android:iconTint="@color/White"/>
-
-
-            </group>
-        </menu>
-    </item>
 
     <item android:id="@+id/item5_settings"
         android:title="Settings"

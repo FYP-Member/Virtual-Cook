@@ -18,8 +18,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.sehrishsheikh.virtualcook.Login_Via_Account.ChefSideView.FirstFragment.Chef_Dishes.ImageAdapter;
-import com.sehrishsheikh.virtualcook.Login_Via_Account.ChefSideView.FirstFragment.Chef_Dishes.Upload;
+import com.sehrishsheikh.virtualcook.Login_Via_accountt.Packgae_Upload_Dishes.ImageAdapter;
+import com.sehrishsheikh.virtualcook.Login_Via_accountt.Packgae_Upload_Dishes.Upload;
 import com.sehrishsheikh.virtualcook.R;
 
 import java.util.ArrayList;

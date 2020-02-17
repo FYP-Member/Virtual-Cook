@@ -26,7 +26,7 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
-import com.sehrishsheikh.virtualcook.Login_Via_Account.ChefSideView.FirstFragment.Chef_Dishes.ChefPostActivity;
+import com.sehrishsheikh.virtualcook.Login_Via_accountt.Packgae_Upload_Dishes.ChefPostActivity;
 import com.sehrishsheikh.virtualcook.Login_As_Guest.Home.Model;
 import com.sehrishsheikh.virtualcook.Login_As_Guest.Home.ViewHolder;
 import com.sehrishsheikh.virtualcook.R;

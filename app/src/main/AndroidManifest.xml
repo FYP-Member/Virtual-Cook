@@ -3,6 +3,8 @@
     package="com.sehrishsheikh.virtualcook">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -11,18 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login_Via_Account.ChefSideView.BNV"></activity>
-        <activity android:name=".Login_Via_Account.ChefSideView.FirstFragment.Chef_Dishes.ViewImageActivity" />
-        <activity android:name=".Login_Via_Account.ChefSideView.FirstFragment.Chef_Dishes.ChefPostActivity" />
+        <activity android:name=".Login_Via_accountt.W_All_Recipe_fvrt_share_Download.WallpapersActivity"></activity>
+        <activity android:name=".DrawerLayoutActivity" />
+        <activity android:name=".Login_Via_accountt.Packgae_Upload_Dishes.ViewImageActivity" />
+        <activity
+            android:name=".Login_Via_accountt.Packgae_Upload_Dishes.ChefPostActivity"
+            android:label="My new title"
+            android:parentActivityName=".Login_Via_accountt.Packgae_Upload_Dishes.ViewImageActivity"></activity>
         <activity android:name=".Chef.ChefPostDetailActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".Login_Via_accountt.BNV"/>
         <activity android:name=".Login_As_Guest.Home.HomeItemDetail" />
         <activity android:name=".Pager" />
-        <activity android:name=".DrawerLayoutActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".Chef.ChefActivtiy" />
         <activity android:name=".RegistrationActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

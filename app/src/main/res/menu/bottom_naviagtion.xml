@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/nav_all_recipes"
+        android:icon="@drawable/ic_restaurant_black_24dp"
+        android:title="All Recipes" />
+
 
     <item
-        android:id="@+id/nav_favorites"
+        android:id="@+id/nav_dish_post"
         android:icon="@drawable/ic_room_service_black_24dp"
         android:title="All Recipes" />
+
+
 
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/logo"
         android:title="My Recipe" />
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="All Recipes" />
 
 
 

@@ -117,12 +117,6 @@ public class DrawerLayoutActivity extends AppCompatActivity implements Navigatio
                 changeFragment(new HomeClass() , "allrecipes");
                 break;
 
-
-            case R.id.itme2_dinnerspinner_fragment:
-                changeFragment(new SpinnerClass() , "Spinner");
-                break;
-
-
             case R.id.item3_recipebox:
                 changeFragment(new BoxClass() , "   Inbox");
                 break;

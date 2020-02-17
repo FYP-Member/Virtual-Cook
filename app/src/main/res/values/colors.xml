@@ -25,4 +25,13 @@
 
     <color name="lightgrayy">#E7E5E5</color>
 
+    <color name="lightttgrayy">#F1F1F1</color>
+
+
+    <color name="colorTitle">#cecece</color>
+    <color name="colorNavDefault">#8b8a8a</color>
+    <color name="colorNavActive">#fafafa</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorCategoryBackground">#bb363932</color>
+
 </resources>

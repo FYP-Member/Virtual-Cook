@@ -7,6 +7,18 @@
     android:layout_height="match_parent"
     android:background="@color/lightgrayy">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+      android:tint="@color/gray_one"
+        android:layout_marginLeft="300dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/logo"
+        />
+
+
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,5 +31,7 @@
         android:id="@+id/recycler_view"
 
         />
+
+
 
 </RelativeLayout>
