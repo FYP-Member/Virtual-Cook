@@ -61,9 +61,9 @@ public class SettingsFragment extends Fragment
 
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-            Glide.with(getActivity())
+           Glide.with(getActivity())
                     .load(user.getPhotoUrl().toString())
-                    .into(imageView);
+            .into(imageView);
 
 
             textViewName.setText(user.getDisplayName());
