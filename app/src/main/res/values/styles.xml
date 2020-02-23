@@ -8,9 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowFullscreen">true</item>
 
-        
+
     </style>
-    
+
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
         
         <item name="android:textSize">17dp</item>
@@ -22,6 +22,8 @@
     <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_screen</item>
     </style>
+
+
 
 
 </resources>
