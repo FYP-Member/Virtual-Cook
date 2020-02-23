@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,28 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login_Via_accountt.W_All_Recipe_fvrt_share_Download.WallpapersActivity"></activity>
+        <activity android:name=".Login_Via_accountt.TabLayout" />
+        <activity android:name=".Login_Via_accountt.BNV" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".DrawerLayoutActivity" />
         <activity android:name=".Login_Via_accountt.Packgae_Upload_Dishes.ViewImageActivity" />
         <activity
             android:name=".Login_Via_accountt.Packgae_Upload_Dishes.ChefPostActivity"
             android:label="My new title"
-            android:parentActivityName=".Login_Via_accountt.Packgae_Upload_Dishes.ViewImageActivity"></activity>
+            android:parentActivityName=".Login_Via_accountt.Packgae_Upload_Dishes.ViewImageActivity" />
         <activity android:name=".Chef.ChefPostDetailActivity" />
-        <activity android:name=".Login_Via_accountt.BNV"/>
+        <activity android:name=".Login_Via_accountt.W_All_Recipe_fvrt_share_Download.WallpapersActivity" />
         <activity android:name=".Login_As_Guest.Home.HomeItemDetail" />
         <activity android:name=".Pager" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".Chef.ChefActivtiy" />
-        <activity android:name=".RegistrationActivity" />
-        <activity android:name=".HomeActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Chef.ChefActivtiy" />
+        <activity android:name=".RegistrationActivity" />
     </application>
 
 </manifest>
