@@ -1,6 +1,7 @@
 package com.sehrishsheikh.virtualcook.Login_Via_accountt.W_All_Recipe_fvrt_share_Download;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -47,7 +48,10 @@ public class WallpapersActivity extends AppCompatActivity {
         wallpaperList = new ArrayList<>();
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //set layout as linear layout
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+
         adapter = new WallpapersAdapter(this, wallpaperList);
 
         recyclerView.setAdapter(adapter);
